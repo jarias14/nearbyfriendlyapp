@@ -104,7 +104,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     FlutterPlacesDialog.setGoogleApiKey(
-        /*"AIzaSyBVJ6DGEqQv4lRicySx0siZTCk-9lXY6lY" */ "");
+        "AIzaSyDchsGIuFa-LRvTvqlY9-NwNplYG1fmQ08");
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
