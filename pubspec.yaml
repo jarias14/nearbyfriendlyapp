@@ -36,6 +36,13 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  fonts:
+    - family:  Sports
+      fonts:
+        - asset: assets/fonts/Sports.ttf
+
+  assets:
+    - assets/graphics/001-football.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
