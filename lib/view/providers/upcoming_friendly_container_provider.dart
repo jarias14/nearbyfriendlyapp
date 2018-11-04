@@ -31,7 +31,7 @@ class UpcomingFriendlyContainerProvider {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
-            match.icon,
+            Row ( children: <Widget>[match.icon, Text("6PM Sunday 10/12")]),
             Text(
               match.title,
               overflow: TextOverflow.ellipsis,

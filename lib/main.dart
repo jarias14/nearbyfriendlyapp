@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_places_dialog/flutter_places_dialog.dart';
 import 'package:nearbyfriendlyapp/view/icons/sports_icons.dart';
+import 'package:nearbyfriendlyapp/view/styles/theme_data.dart';
 import 'package:nearbyfriendlyapp/models/match.dart';
 import 'package:nearbyfriendlyapp/view/providers/bottom_navigation_bar_provider.dart';
 import 'package:nearbyfriendlyapp/view/providers/title_text_container_provider.dart';
@@ -16,6 +17,8 @@ class MyApp extends StatefulWidget {
   _MyAppState createState() => new _MyAppState();
 
 }
+
+final ThemeData themeData = FirstTheme.buildFirstThemeData;
 
 
 class _MyAppState extends State<MyApp> {
@@ -123,6 +126,7 @@ class _MyAppState extends State<MyApp> {
           '/second': (context) => showPlacePicker(),
         },
         home: new Scaffold(
+
           appBar: new AppBar(
             title: new Text('Nearby Friendly'),
             actions: <Widget>[
@@ -145,9 +149,9 @@ class _MyAppState extends State<MyApp> {
               children: <Widget>[
                 DrawerHeader(
                   child: Text('Drawer Header'),
-                  decoration: BoxDecoration(
+                  /*decoration: BoxDecoration(
                     color: Colors.blue,
-                  ),
+                  ),*/
                 ),
                 ListTile(
                   title: Text('Item 1'),
@@ -171,6 +175,8 @@ class _MyAppState extends State<MyApp> {
                   icon:
                       ImageIcon(AssetImage('assets/graphics/001-football.png')),
                   onPressed: null)),
-        ));
+        ),
+        theme: themeData,
+    );
   }
 }
